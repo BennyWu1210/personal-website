@@ -9,7 +9,7 @@ const Resume = () => {
     <div className="resume-container" id="resume">
       <SectionTitle name="Resume"/>
       <span>If you want to know more about me!</span>
-      <a href={resumeURL} target="_blank">
+      <a href={resumeURL} target="_blank" rel="noreferrer">
         <div className="resume-preview">
           <img src={ResumePreview}/>
           <div className="preview-overlay">
