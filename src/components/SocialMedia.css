@@ -1,0 +1,18 @@
+/* Remove on smaller screen sizes */
+.social-container {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.social-icon {
+  color: #f2f2f2;
+  height: 38px;
+}

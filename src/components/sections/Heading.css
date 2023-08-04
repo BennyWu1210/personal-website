@@ -1,0 +1,48 @@
+.heading-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  /* Flex direction should change when the screen size shrinks */
+}
+
+.content-container {
+  /* Adjust the growth size in media queries */
+  width: 720px;
+  height: 220px;
+  padding-left: 120px;
+}
+
+.content-container h2 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* for animation purposes */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.content-container p {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.content-container > img {
+  margin-top: 60px;
+  height: 150px;
+  margin-top: 60px;
+}
+
+.profile-pic {
+  /* Adjust the width in media queries */
+  width: 220px;
+  height: 220px;
+}
+
+.profile-pic > img {
+  height: 200px;
+}

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+span, p, h1, h2, h3 {
+  color: var(--white);
+}
+
+:root {
+  --rich-black: #131419;
+  --white: #f3f3f3;
+  --black: #000;
+  --almond: #f1dac4;
+}

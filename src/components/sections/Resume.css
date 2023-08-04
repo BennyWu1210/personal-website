@@ -1,0 +1,40 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-container > span {
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+.resume-preview {
+  position: relative;
+  margin-top: 50px;
+  width: 580px;
+  height: 730px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.resume-preview > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.preview-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.preview-overlay:hover {
+  backdrop-filter: blur(2px);
+}

@@ -1,0 +1,25 @@
+.nav-button {
+  /* Positioning */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  /* Sizing */
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+
+  /* Styling */
+  border: none;
+  background-color: var(--black);
+  z-index: 999;
+
+  cursor: pointer;
+
+}
+
+.nav-button svg {
+  position: relative;
+  top: 3px;
+  left: 1px;
+}

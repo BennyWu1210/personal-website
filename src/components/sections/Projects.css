@@ -1,0 +1,20 @@
+.project-container {
+  /* Adjust width in media queries */
+  margin-top: 250px;
+  margin-bottom: 200px;
+  padding: 0 110px 0 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: break-spaces;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 80px;
+  gap: 70px 90px;
+}
+
