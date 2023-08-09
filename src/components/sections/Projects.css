@@ -2,7 +2,7 @@
   /* Adjust width in media queries */
   margin-top: 250px;
   margin-bottom: 200px;
-  padding: 0 110px 0 110px;
+  padding: 0 50px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,4 +17,36 @@
   margin: 80px;
   gap: 70px 90px;
 }
+
+@media (max-width: 800px) {
+  .project-container {
+    padding: 0 2px 0 20px; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  /* From ProjectCard.tsx */
+  .project__card-image {
+    height: 40%;
+  }
+
+  .project__card-content {
+    height: 60%; 
+    font-size: 16px;
+  }
+}
+
+/* Phone screen */
+@media screen and (max-width: 450px) {
+  .project__card-content {
+    font-size: 15.3px;
+    padding: 30px 20spx 0 25px;
+  }
+
+  .project__card-content > h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+
 

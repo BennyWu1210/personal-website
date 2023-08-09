@@ -36,13 +36,13 @@ const AboutMe = () => {
     <p>TODO: Animation when scroll into view</p>
     <SectionTitle name="About Me" />
     {texts}
+    <p>(TODO: Infinite scrolling)</p>
     <div className="scrolling-wrapper">
-      <p>(TODO: Infinite scrolling)</p>
       <div className="hobbies-container">
         {cardsInfo.map(props => <AboutCard {...props} />)}
       </div>
     </div>
-    
+    <span className="dot" id="about-dot"></span>
 
   </div>
 }

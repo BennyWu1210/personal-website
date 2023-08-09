@@ -4,5 +4,6 @@
   background-color: var(--rich-black);
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 

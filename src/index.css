@@ -8,9 +8,22 @@ span, p, h1, h2, h3 {
   color: var(--white);
 }
 
+
 :root {
   --rich-black: #131419;
-  --white: #f3f3f3;
+  --white: #f1f1f1;
   --black: #000;
   --almond: #f1dac4;
+}
+
+/* The cool circles */
+.dot {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  transition: transform 0.6s;  
+}
+
+.dot:hover {
+  transform: scale(1.05);
 }

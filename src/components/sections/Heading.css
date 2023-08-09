@@ -1,9 +1,9 @@
 .heading-container {
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
-
   /* Flex direction should change when the screen size shrinks */
 }
 
@@ -28,21 +28,138 @@
 
 .content-container p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .content-container > img {
   margin-top: 60px;
   height: 150px;
-  margin-top: 60px;
+  object-fit: contain;
 }
 
 .profile-pic {
   /* Adjust the width in media queries */
-  width: 220px;
-  height: 220px;
+  position: relative;
+  width: 20vw;  
+  height: 100%;
 }
 
 .profile-pic > img {
+  position: absolute;
   height: 200px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -70%);
+
 }
+
+@media (min-width: 1500px) {
+  .content-container h2 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .profile-pic {
+    width: 30vw;  
+  }
+
+  .content-container h2 {
+    font-size: 60px;
+  }
+
+  .profile-pic > img {
+    height: 190px;
+  }
+
+  .content-container p {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .heading-container {
+    /* We now go from horizontal to vertical */
+    flex-direction: column-reverse;  
+    height: max(100vh, 700px);
+    margin-top: 0;
+  }
+
+  .profile-pic {
+    height: 30%;
+  }
+
+
+  .content-container {
+    height: 70%;
+    width: 90vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-container h2 {
+    font-size: 55px;
+  }
+
+  .profile-pic > img {
+    height: 180px;
+    transform: translate(-50%, 0);
+  }
+
+  .content-container p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .social-container-vertical {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-container {
+    width: 95vw;
+  }
+  .content-container h2 {
+    font-size: 44px;
+  }
+
+  .profile-pic > img {
+    height: 160px;
+  }
+
+  .content-container p {
+    font-size: 15px;
+  }
+
+  .content-container > img {
+    height: 120px;
+  }
+}
+
+/* Creating the cool circles */
+#dot1 {
+  background-color: var(--black);
+  height: calc(150px + 5vw);
+  width: calc(150px + 5vw);
+  top: 60px;
+  right: -3vw;
+  filter: drop-shadow(0px 0px 3px var(--black));
+}
+
+#dot2 {
+  background-color: var(--almond);
+  height: calc(200px + 8vw);
+  width: calc(200px + 8vw);
+  top: -90px;
+  right: 2vw;
+  filter: drop-shadow(0px 0px 8px var(--almond));
+}
+

@@ -1,5 +1,72 @@
 .footer-container {
-    height: 500px;
-    background-color: var(--almond);
-    margin-top: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-color: var(--black);
+  margin-top: 200px;
+  padding: 60px 80px;
+  overflow: hidden;
+}
+
+.footer-container > .footer-title {
+  font-weight: 700;
+  font-size: 35px;
+  flex-grow: 1;
+  z-index: 100;
+}
+
+.footer-container > .footer-social__media {
+  flex-grow: 7;
+  z-index: 100;
+}
+
+.footer-container > a {
+  flex-grow: 1;
+  z-index: 100;
+  font-weight: 600;
+}
+
+.footer-container > .copyright {
+  flex-grow: 1;
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    align-items: center;
+  }
+
+  .footer-container > .footer-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-container {
+    align-items: center;
+    padding: 60px 20px;
+  }
+
+  .footer-container > .footer-title {
+    font-size: 25px;
+  }
+}
+
+#footer-dot1 {
+  background-color: var(--rich-black);
+  height: 270px;
+  width: 270px;
+  top: 15%;
+  right: -130px;
+  filter: drop-shadow(0px 0px 10px var(--rich-black));
+}
+
+#footer-dot2 {
+  background-color: var(--almond);
+  height: 330px;
+  width: 330px;
+  top: 50%;
+  right: -20px;
+  filter: drop-shadow(0px 0px 10px var(--almond));
 }

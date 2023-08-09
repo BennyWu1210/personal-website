@@ -45,3 +45,7 @@ export interface ProjectProps {
   name: string
   text: string
 }
+
+export interface CustomIcons {
+  horizontal: boolean
+}

@@ -5,11 +5,10 @@ interface TitleProps {
 }
 
 const titleStying: React.CSSProperties = {
-  fontSize: "60px",
+  fontSize: "calc(35px + 2vw)",
   fontWeight: 700, 
   margin: "auto",
   textAlign: "center"
-  
 }
 
 const lineStyling: React.CSSProperties = {
@@ -21,7 +20,6 @@ const lineStyling: React.CSSProperties = {
   position: "relative",
   left: "calc(50% - 62px)",
   marginTop: "20px"
-  
 }
 
 

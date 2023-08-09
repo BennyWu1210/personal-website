@@ -23,3 +23,10 @@
   top: 3px;
   left: 1px;
 }
+
+@media (max-width: 450px) {
+  .nav-button {
+    top: 30px;
+    left: 20px;
+  }
+}

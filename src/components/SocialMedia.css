@@ -1,9 +1,10 @@
 /* Remove on smaller screen sizes */
-.social-container {
+.social-container-vertical {
   flex: 1;
+  z-index: 100;
 }
 
-.social-icons {
+.social-icons-vertical {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -12,7 +13,23 @@
   cursor: pointer;
 }
 
-.social-icon {
+.social-icon-vertical {
   color: #f2f2f2;
   height: 38px;
 }
+
+.social-container-horizontal {
+  z-index: 100;
+}
+
+.social-icons-horizontal {
+  display: flex;
+  gap: 36px;
+  cursor: pointer;
+}
+
+.social-icon-horizontal {
+  color: #f2f2f2;
+  height: 50px;
+}
+

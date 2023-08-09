@@ -28,3 +28,13 @@
   font-weight: 500;
   margin-top: 15px;
 }
+
+@media (max-width: 600px) {
+  .nav-links {
+    left: 50px;
+  }
+
+  .nav-link {
+    font-size: 35px;
+  }
+}

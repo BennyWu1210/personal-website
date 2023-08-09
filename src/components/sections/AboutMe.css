@@ -1,4 +1,5 @@
 .about-container {
+  position: relative;
   /* Adjust width in media queries */
   margin-top: 200px;
   margin-bottom: 200px;
@@ -10,11 +11,12 @@
 
 .about-description {
   /* Adjust width in media queries */
-  width: 700px;
+  width: min(80%, 700px);
   margin-top: 50px;
   white-space: pre-wrap;
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
   border: var(--white) 1px ridge;
+  z-index: 500;
 }
 
 .about-description > p {
@@ -33,4 +35,30 @@
   display: flex;
   margin-top: 100px;
   white-space: pre-wrap;
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    padding: 0 50px 0 50px; 
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-container {
+    padding: 0 5px 0 5px; 
+  }
+
+  .about-description > p {
+    font-size: 16px;
+  }
+}
+
+#about-dot {
+  background-color: var(--black);
+  width: 380px;
+  height: 380px;
+  top: 50%;
+  left: -80px;
+  filter: drop-shadow(0px 0px 8px var(--black));
 }

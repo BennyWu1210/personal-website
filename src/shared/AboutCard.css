@@ -1,6 +1,6 @@
 .about-card {
   /* Adjust this for phone size */
-  min-width: 302px;
+  min-width: 292px;
   height: 223px;
   background-color: var(--white);
   border-radius: 10px;
@@ -12,6 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  z-index: 100;
 }
 
 .about-icon {
