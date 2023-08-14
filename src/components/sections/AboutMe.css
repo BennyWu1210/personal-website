@@ -16,7 +16,7 @@
   white-space: pre-wrap;
   padding: 0 15px 0 15px;
   border: var(--white) 1px ridge;
-  z-index: 500;
+  z-index: 100;
 }
 
 .about-description > p {
@@ -34,7 +34,7 @@
   width: 96vw;
   overflow-x: hidden;
   margin-top: 100px;
-  z-index: 500;
+  z-index: 100;
 }
 
 .hobbies-scrollable {

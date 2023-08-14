@@ -1,8 +1,7 @@
-import React from "react";
 import SocialMedia from "../SocialMedia";
 import "./Footer.css";
 
-const attributionURL = "";
+const attributionURL = "https://docs.google.com/document/d/11ATrY8HxVvjd2o74-LrQQFLFyolv0nR1ZHsUMi63X68/edit?usp=sharing";
 const Footer = () => {
   return (
     <div className="footer-container">

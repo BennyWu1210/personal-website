@@ -15,7 +15,7 @@
   z-index: 999;
 
   cursor: pointer;
-
+  z-index: 1000;
 }
 
 .nav-button svg {
