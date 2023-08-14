@@ -8,7 +8,8 @@ const Resume = () => {
   return (
     <div className="resume-container" id="resume">
       <SectionTitle name="Resume"/>
-      <span>If you want to know more about me!</span>
+      <span className="dot" id="resume-dot"></span>
+      <span className="resume-description">If you want to know more about me!</span>
       <a href={resumeURL} target="_blank" rel="noreferrer">
         <div className="resume-preview">
           <img src={ResumePreview}/>

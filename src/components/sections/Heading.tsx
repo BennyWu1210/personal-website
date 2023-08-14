@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 import { Properties } from "../interfaces/general-interfaces";
 import AngleDown from "../../shared/AngleDown";
 import SocialMedia from "../SocialMedia";
-
-
+import TypewriterComponent from "typewriter-effect";
 
 const animateProperties: Properties = {
   initial: { position: 'relative', top: -50, opacity: 0 },
@@ -36,7 +35,10 @@ const Heading = () => {
           <div className="overflow-hidden">
             <motion.h2 {...headingProperties}>Hey, I'm Benny</motion.h2>
           </div>
-          <motion.p {...animateProperties}>I'm a passionate learner and a change-maker (typing effect, once) </motion.p>
+          <TypewriterComponent onInit={typewriter => {
+            typewriter.pauseFor(500).typeString("I'm a passionate learner ").pauseFor(1000).typeString("and a change-maker").pauseFor(800).typeString(".").start()
+          }}/>
+          {/* <motion.p {...animateProperties}> (typing effect, once) </motion.p> */}
           <img src={DogGIF} />
         </div>
 

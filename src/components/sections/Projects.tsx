@@ -25,10 +25,10 @@ const Projects = () => {
       <SectionTitle name="Projects"/>
       <Button width="230px" height="60px" color="var(--white)" backgroundColor="var(--black)" url={GitHubURL}>View my GitHub</Button>
       
-      <p>TODO: make each card as clickable links</p>
       <div className="project-gallery">
         {projectList.map(item => <ProjectCard imageURL={item.imageURL} name={item.name} text={item.text}/>)}
       </div>
+      
     </div>
   );
 }
