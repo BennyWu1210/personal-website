@@ -7,3 +7,6 @@
   overflow-x: hidden;
 }
 
+.home-container > .angle-container {
+  transform: translateX(-37%);
+}

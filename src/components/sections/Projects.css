@@ -22,7 +22,7 @@
 
 @media (max-width: 800px) {
   .project-container {
-    padding: 0 2px 0 20px; 
+    padding: 0 20px 0 20px; 
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -42,7 +42,7 @@
 @media screen and (max-width: 450px) {
   .project__card-content {
     font-size: 15.3px;
-    padding: 30px 20spx 0 25px;
+    padding: 30px 20px 0 25px;
   }
 
   .project__card-content > h2 {

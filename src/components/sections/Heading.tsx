@@ -29,8 +29,8 @@ const Heading = () => {
     {/* <p>TODO: Cool Circles </p>
     <p>TODO: If on phone screen, alert user</p> */}
       <div className="heading-container" id="heading">
-      <span className="dot" id="dot2"></span>
-      <span className="dot" id="dot1"></span>
+        <span className="dot" id="dot2"></span>
+        <span className="dot" id="dot1"></span>
         <div className="content-container">
           <div className="overflow-hidden">
             <motion.h2 {...headingProperties}>Hey, I'm Benny</motion.h2>
