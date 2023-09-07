@@ -55,21 +55,21 @@
 
 @media (min-width: 2000px) {
   .content-container h2 {
-    font-size: 110px;
+    font-size: 100px;
   }
 
   .profile-pic > img {
     height: 240px;
   }
 
-  .content-container p {
-    font-size: 24px;
+  .content-container .Typewriter__wrapper {
+    font-size: 25px;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1500px) and (max-width: 2000px) {
   .content-container h2 {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 
@@ -86,8 +86,8 @@
     height: 190px;
   }
 
-  .content-container p {
-    font-size: 20px;
+  .content-container .Typewriter__wrapper {
+    font-size: 22px;
   }
 
 
@@ -128,8 +128,8 @@
     transform: translate(-50%, 0);
   }
 
-  .content-container p {
-    font-size: 18px;
+  .content-container .Typewriter__wrapper {
+    font-size: 20px;
     margin-top: 0;
   }
 
@@ -150,8 +150,8 @@
     height: 160px;
   }
 
-  .content-container p {
-    font-size: 15px;
+  .content-container .Typewriter__wrapper {
+    font-size: 18px;
   }
 
   .content-container > img {
