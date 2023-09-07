@@ -53,6 +53,20 @@
 
 }
 
+@media (min-width: 2000px) {
+  .content-container h2 {
+    font-size: 110px;
+  }
+
+  .profile-pic > img {
+    height: 240px;
+  }
+
+  .content-container p {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1500px) {
   .content-container h2 {
     font-size: 90px;
