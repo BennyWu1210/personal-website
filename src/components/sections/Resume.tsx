@@ -3,7 +3,7 @@ import SectionTitle from "../../shared/SectionTitle";
 import ResumePreview from "../../assets/resume-preview.png";
 import Button from "../../shared/Button";
 
-const resumeURL = "https://drive.google.com/file/d/1PXBHnxDP2EoUqEccK4PDFmR7LqPAE-M7"
+const resumeURL = "https://drive.google.com/file/d/1wyKSH0t0tqMa5RWbU2eog7IVeEkGRKUb/view?usp=sharing"
 const Resume = () => {
   return (
     <div className="resume-container" id="resume">
