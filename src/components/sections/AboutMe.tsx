@@ -9,11 +9,16 @@ import PianoIcon from "../../assets/icons/piano.png";
 import MagicIcon from "../../assets/icons/magic.png";
 import BadmintonIcon from "../../assets/icons/badminton.png";
 import OrigamiIcon from "../../assets/icons/origami.png";
+import QuotationLeft from "../../assets/Quotation_Left.svg"
+import QuotationRight from "../../assets/Quotation_Right.svg"
 
 import { HobbyProps } from "../interfaces/general-interfaces";
 
 const texts = (
-  <div className="about-description"><p>Welcome my friend (or stranger) 👀 </p>
+  <div className="about-description">
+    <img src={QuotationLeft} id="quote-left"/>
+    <img src={QuotationLeft} id="quote-left2"/>
+    <p style={{fontSize: 24, fontWeight: "bold", color: "var(--almond"}}>Welcome my friend (or stranger) 👀 </p>
     <p>I am a second-year Computer Science student at the <span>University of Waterloo</span>. where I'm diving headfirst into the exciting world of knowledge and discovery 🚀</p>
     <p>
       I’ve previously worked as a research assistant alongside Dr. Navid Esfahani, in which I was trained to conduct academic research on combinatorial analysis and coding theory. I’ve also worked as a competitive programming instructor, a hackathon organizer, and a student representative for multiple years.
@@ -21,6 +26,8 @@ const texts = (
     <p>
       From this website, you will explore more about who I am. Please reach out because I’d love to talk to you 😁
     </p>
+    <img src={QuotationRight} id="quote-right"/>
+    <img src={QuotationRight} id="quote-right2"/>
   </div>
 );
 
@@ -45,7 +52,11 @@ const cardsInfo: HobbyProps[] = [
 
 const AboutMe = () => {
   return <div className="about-container" id="about">
-    <SectionTitle name="About Me" />
+    <SectionTitle name="About Me" color="var(--white)" />
+    <span className="dot" id="about-dot"></span>
+    
+    
+
     {texts}
     <div className="scrolling-wrapper">
       <div className="hobbies-container">
@@ -54,7 +65,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-    <span className="dot" id="about-dot"></span>
+    <span className="dot" id="about-dot3"></span>
 
   </div>
 }

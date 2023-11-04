@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from 'framer-motion';
 
 interface TitleProps {
-  name: string
+  name: string,
+  color: string
 }
 
 const titleStying: React.CSSProperties = {
-  fontSize: "calc(35px + 2vw)",
+  fontSize: "calc(32px + 1.8vw)",
   fontWeight: 700,
   margin: "auto",
   textAlign: "center",
@@ -25,7 +26,7 @@ const lineStyling: React.CSSProperties = {
 }
 
 
-const SectionTitle: React.FC<TitleProps> = ({ name }) => {
+const SectionTitle: React.FC<TitleProps> = ({ name, color }) => {
   return <motion.div className="title-container"
     style={{ zIndex: 100 }}
     initial="hidden"
@@ -36,7 +37,7 @@ const SectionTitle: React.FC<TitleProps> = ({ name }) => {
       visible: { opacity: 1, y: 0 },
       hidden: { opacity: 0, y: 20 }
     }}>
-      <h2 style={titleStying}>{name}</h2>
+      <h2 style={{...titleStying, color: color}}>{name}</h2>
       <div style={lineStyling}></div>
   </motion.div>
 }

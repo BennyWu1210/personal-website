@@ -7,7 +7,7 @@ const resumeURL = "https://drive.google.com/file/d/1wyKSH0t0tqMa5RWbU2eog7IVeEkG
 const Resume = () => {
   return (
     <div className="resume-container" id="resume">
-      <SectionTitle name="Resume"/>
+      <SectionTitle name="Resume" color="white"/>
       <span className="dot" id="resume-dot"></span>
       <span className="resume-description">If you want to know more about me!</span>
       <a href={resumeURL} target="_blank" rel="noreferrer">

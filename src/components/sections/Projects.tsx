@@ -22,7 +22,7 @@ const projectList = [
 const Projects = () => {
   return (
     <div className="project-container" id="projects">
-      <SectionTitle name="Projects"/>
+      <SectionTitle name="Projects" color="white"/>
       <Button width="230px" height="60px" color="var(--white)" backgroundColor="var(--black)" url={GitHubURL}>View my GitHub</Button>
       
       <div className="project-gallery">
