@@ -16,12 +16,15 @@ import { HobbyProps } from "../interfaces/general-interfaces";
 
 const texts = (
   <div className="about-description">
+    {/* Rendering issues on Safari */}
+    {/* <object data={QuotationLeft} type="image/svg+xml" id="quote-left"></object>
+    <object data={QuotationLeft} type="image/svg+xml" id="quote-left2"></object> */}
     <img src={QuotationLeft} id="quote-left"/>
     <img src={QuotationLeft} id="quote-left2"/>
     <p style={{fontSize: 24, fontWeight: "bold", color: "var(--almond"}}>Welcome my friend (or stranger) 👀 </p>
     <p>I am a second-year Computer Science student at the <span>University of Waterloo</span>. where I'm diving headfirst into the exciting world of knowledge and discovery 🚀</p>
     <p>
-      I’ve previously worked as a research assistant alongside Dr. Navid Esfahani, in which I was trained to conduct academic research on combinatorial analysis and coding theory. I’ve also worked as a competitive programming instructor, a hackathon organizer, and a student representative for multiple years.
+      I’ve previously worked as a Software Engineering Intern at Ford, developing an abstraction layer using Java Spring Boot for commercial dealers across North America and Europe. I've also worked as research assistant alongside Dr. Navid Esfahani, in which I was trained to conduct academic research on combinatorial analysis and coding theory. Furthermore, I've been a competitive programming instructor, a hackathon organizer, and a student representative for many years.
     </p>
     <p>
       From this website, you will explore more about who I am. Please reach out because I’d love to talk to you 😁

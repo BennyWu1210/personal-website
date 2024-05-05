@@ -13,7 +13,7 @@ const Footer = () => {
         <span>Attribution List</span>
       </a>
       <div className="copyright">
-        <span>Benny Wu © 2023</span>
+        <span>Benny Wu © 2024</span>
       </div>
       
       <span className="dot" id="footer-dot2"></span>
