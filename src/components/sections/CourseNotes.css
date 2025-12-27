@@ -1,0 +1,120 @@
+.course-notes-container {
+  position: relative;
+  margin-top: 250px;
+  margin-bottom: 200px;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: break-spaces;
+}
+
+.course-notes-description {
+  margin-top: 50px;
+  font-size: 20px;
+  z-index: 100;
+  text-align: center;
+  width: min(90%, 600px);
+}
+
+.course-notes-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: min(100%, 1200px);
+  margin: 80px 0;
+  gap: 40px 60px;
+  z-index: 100;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  width: min(35vw, 350px);
+  min-width: 280px;
+  padding: 30px 35px;
+  border: var(--white) 2px solid;
+  border-radius: 20px;
+  background-color: var(--rich-black);
+  filter: drop-shadow(0px 0px 8px var(--almond));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0px 0px 12px var(--almond));
+}
+
+.course-name {
+  color: var(--almond);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+.course-resources {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-resource-link {
+  color: var(--white);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+.course-resource-link:hover {
+  background-color: var(--almond);
+  color: var(--rich-black);
+  border-color: var(--almond);
+}
+
+@media (max-width: 800px) {
+  .course-notes-container {
+    padding: 0 20px 0 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .course-notes-gallery {
+    margin: 50px 0;
+    gap: 30px;
+  }
+
+  .course-card {
+    width: 90vw;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .course-card {
+    padding: 25px 25px;
+  }
+
+  .course-name {
+    font-size: 24px;
+  }
+
+  .course-resource-link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+#course-notes-dot {
+  background-color: var(--black);
+  height: calc(280px + 10vw);
+  width: calc(280px + 10vw);
+  top: -80px;
+  left: 3vw;
+  filter: drop-shadow(0px 0px 10px var(--black));
+  z-index: 0;
+}

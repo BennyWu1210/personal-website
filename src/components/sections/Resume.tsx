@@ -3,13 +3,14 @@ import SectionTitle from "../../shared/SectionTitle";
 import ResumePreview from "../../assets/resume-preview.png";
 import Button from "../../shared/Button";
 
-const resumeURL = "https://drive.google.com/file/d/1EbWdZLm2YP3qR_nVpesuc5MFHgn73bzN/view?usp=sharing"
+// const resumeURL = "https://drive.google.com/file/d/1FOFO56PZk1U8EtVHM4vghdJWIdN2W2O4/view?usp=sharing"
+const resumeURL = "/resume.pdf"
 const Resume = () => {
   return (
     <div className="resume-container" id="resume">
       <SectionTitle name="Resume" color="white"/>
       <span className="dot" id="resume-dot"></span>
-      <span className="resume-description">If you would like to know more about me! (Note: Extremely outdated as of 2024)</span>
+      <span className="resume-description">If you would like to know more about me! (Likely Outdated)</span>
       <a href={resumeURL} target="_blank" rel="noreferrer">
         <div className="resume-preview">
           <img src={ResumePreview}/>

@@ -2,6 +2,7 @@ import Heading from "../sections/Heading";
 import "./Homepage.css";
 import AboutMe from "../sections/AboutMe";
 import Projects from "../sections/Projects";
+import CourseNotes from "../sections/CourseNotes";
 import Resume from "../sections/Resume";
 import Footer from "../sections/Footer";
 import { useRef } from "react";
@@ -13,6 +14,7 @@ const Homepage = () => {
     
     <AboutMe />
     <Projects />
+    <CourseNotes />
     <Resume />
     <Footer />
   </div>

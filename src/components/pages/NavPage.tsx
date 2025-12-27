@@ -8,6 +8,7 @@ const hrefs = [
   { name: "Home", href: "#heading" },
   { name: "About Me", href: "#about" },
   { name: "Portfolio", href: "#projects" },
+  { name: "Course Notes", href: "#course-notes" },
   { name: "Resume", href: "#resume" }
 ];
 

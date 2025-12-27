@@ -21,13 +21,16 @@ const texts = (
     <object data={QuotationLeft} type="image/svg+xml" id="quote-left2"></object> */}
     <img src={QuotationLeft} id="quote-left"/>
     <img src={QuotationLeft} id="quote-left2"/>
-    <p style={{fontSize: 24, fontWeight: "bold", color: "var(--almond"}}>Welcome my friend (or stranger) 👀 </p>
-    <p>I am a second-year Computer Science student at the <span>University of Waterloo</span>. where I'm diving headfirst into the exciting world of knowledge and discovery 🚀</p>
+    <p style={{fontSize: 24, fontWeight: "bold", color: "var(--almond"}}>Ah… welcome, traveler. </p>
+    <p>I am a Computer Science student at the <span>University of Waterloo</span>, where I'm learning, building, and making friends with some of the coolest human beings out there.</p>
     <p>
-      I’ve previously worked as a Software Engineering Intern at Ford, developing an abstraction layer using Java Spring Boot for commercial dealers across North America and Europe. I've also worked as research assistant alongside Dr. Navid Esfahani, in which I was trained to conduct academic research on combinatorial analysis and coding theory. Furthermore, I've been a competitive programming instructor, a hackathon organizer, and a student representative for many years.
+      I've previously worked as a <span>Software Engineering Intern</span> in Canada and the U.S. 
+      I'm deeply grateful for the opportunities, and I genuinely love the work I do. 
+      Outside of that, I'm often on random side quests - most notably taking road trips around Ontario (so underrated) or helping build Hack the North.
     </p>
+
     <p>
-      From this website, you will explore more about who I am. Please reach out because I’d love to talk to you 😁
+      Thanks for stalking me, stranger! Don't hesitate to reach out though, I'd love to chat 🚀
     </p>
     <img src={QuotationRight} id="quote-right"/>
     <img src={QuotationRight} id="quote-right2"/>
@@ -37,7 +40,7 @@ const texts = (
 const cardsInfo: HobbyProps[] = [
   { name: "Competitive Programming", icon: ProgrammingIcon, text: "Painful but weirdly enjoyable." },
   { name: "Basketball", icon: BasketballIcon, text: "Favourite sport all time. I play intramurals at Waterloo, shoot me a message if you wanna team up!" },
-  { name: "Music", icon: MusicIcon, text: "My playlist is literally a blend of every genre. From Mandopop (Jay Chou fans?) to Cantopop, Kpop (Twice!), Hip hop...you name it." },
+  { name: "Music", icon: MusicIcon, text: "My playlist is literally a blend of every genre." },
   { name: "Magic", icon: MagicIcon, text: "Die-hard Harry Potter fan. \n \"Wingardium Debugiosa\"" },
   { name: "Piano", icon: PianoIcon, text: "Nowhere near good, but sure do enjoy learning and playing random pieces." },
   { name: "Badminton", icon: BadmintonIcon, text: "Come to PAC small gym and play with me!" },
@@ -46,7 +49,7 @@ const cardsInfo: HobbyProps[] = [
   // for infinite scrolling
   { name: "Competitive Programming", icon: ProgrammingIcon, text: "Painful but weirdly enjoyable." },
   { name: "Basketball", icon: BasketballIcon, text: "Favourite sport all time. I play intramurals at Waterloo, shoot me a message if you wanna team up!" },
-  { name: "Music", icon: MusicIcon, text: "My playlist is literally a blend of every genre. From Mandopop (Jay Chou fans?) to Cantopop, Kpop (Twice!), Hip hop...you name it." },
+  { name: "Music", icon: MusicIcon, text: "My playlist is literally a blend of every genre." },
   { name: "Magic", icon: MagicIcon, text: "Die-hard Harry Potter fan. \n \"Wingardium Debugiosa\"" },
   { name: "Piano", icon: PianoIcon, text: "Nowhere near good, but sure do enjoy learning and playing random pieces." },
   { name: "Badminton", icon: BadmintonIcon, text: "Come to PAC small gym and play with me!" },
