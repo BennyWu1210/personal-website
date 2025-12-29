@@ -15,6 +15,17 @@ const Footer = () => {
       <div className="copyright">
         <span>Benny Wu © 2025</span>
       </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', zIndex: 100 }}>
+        <a href='https://cs.uwatering.com/#bennywu.me?nav=prev' style={{ color: 'white', textDecoration: 'none' }}>←</a>
+        <a href='https://cs.uwatering.com/#bennywu.me' target='_blank' rel='noreferrer'>
+          <img
+            src='https://cs.uwatering.com/icon.white.svg'
+            alt='CS Webring'
+            style={{ width: '24px', height: 'auto', opacity: 0.8 }}
+          />
+        </a>
+        <a href='https://cs.uwatering.com/#bennywu.me?nav=next' style={{ color: 'white', textDecoration: 'none' }}>→</a>
+      </div>
       
       <span className="dot" id="footer-dot2"></span>
       <span className="dot" id="footer-dot1"></span>
